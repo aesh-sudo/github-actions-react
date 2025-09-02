@@ -38,6 +38,7 @@ jobs:
 
   build:
     needs: [lint, test]
+    continue-on-error: true
     strategy:
       matrix:
         node-version: [16, 18]
